@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "e091f4ae-36de-4249-99e8-a245c94694b5",
+		"name": "nawatOucollection Csv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40111871"
+	},
+	"item": [
+		{
+			"name": "NawatDemoToken Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.collectionVariables.set(\"NAWATDEMOTOKEN\", jsonData.access_token);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "origin",
+						"value": "https://demo.visionwaves.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.visionwaves.com/nawat/cmp/marketplace/home-page"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "AUTH_SESSION_ID=Njg5Y2ExNzMtZjhkOC00MjJlLWIwZGItOGIyZmM3YWQ3NjczLjJScWp3aHZLS1F2Q0otNmlpMmd2M190SGEwT3FPUUJlWnhFekJHV0ZUMzhsODZCa3hVNXVVTTJlNTFNelFIOUVwaFAtbkZ4ZHFlTEdmd3ZCc3NpY1hn.keycloak-67bbd7cfbd-kvltp-20238; KC_AUTH_SESSION_HASH=\"od3DjFIc94/94jWaNiNZSNw1S1o/xrs3A9hP53PskYc\"; KEYCLOAK_IDENTITY=eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIzYjE5NzgwOS1mYzM5LTQ4ODAtYmMzZi0yNTQwMmMxNDUyMjYifQ.eyJleHAiOjE3NTAzMjg3NTcsImlhdCI6MTc1MDE1NTk1NywianRpIjoiYmU5ZDlhMmQtNzdmMy00OWYzLTk2NTUtNmRlMzMwNWY2MjNlIiwiaXNzIjoiaHR0cHM6Ly9kZW1vLnZpc2lvbndhdmVzLmNvbS9hdXRoL3JlYWxtcy9uYXdhdCIsInN1YiI6IjliMWJmYWZmLTA5OGItNGVlZS1iODkwLTQyMjhkY2M1YTQxNCIsInR5cCI6IlNlcmlhbGl6ZWQtSUQiLCJzaWQiOiI2ODljYTE3My1mOGQ4LTQyMmUtYjBkYi04YjJmYzdhZDc2NzMiLCJzdGF0ZV9jaGVja2VyIjoiZ1ZjWk4ydjB1eXdmMU5UNVlfaGR3TDcxQTJnRzYyNk9vZnhaSVZ0aEtsMCJ9.7oL1UFnZXSKC-etY85-7MVupgdHt7BcS1kX-Eo8BvVGo8UAN-l5eEAnf-oZ95L4z3trUOWIFR-IPqoFPsDurbQ; KEYCLOAK_SESSION=od3DjFIc94_94jWaNiNZSNw1S1o_xrs3A9hP53PskYc"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "1cb8d7db-fcd8-45e7-9de3-91e7c72252d3.689ca173-f8d8-422e-b0db-8b2fc7ad7673.504e9b1a-fd12-41a7-a014-ca0b18b0974e",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "nawat",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://demo.visionwaves.com/nawat/cmp/marketplace/home-page",
+							"type": "text"
+						},
+						{
+							"key": "code_verifier",
+							"value": "DthnQpPKLlhMdbkzXVzbMK6UZFBJ2XGnH9dlrclRbV9ULdA28EolO4kv4DeYXHAYTwJBgB7xZbRFShHyaFSnDFetkOfnQjuQ",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "company.admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Vision@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.visionwaves.com/auth/realms/nawat/protocol/openid-connect/token",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"visionwaves",
+						"com"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"nawat",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ou create CopyCSV",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"let expectedName = pm.environment.get(\"randomName\");\r",
+							"let actualName = pm.response.json().response[0].fieldNameValue.name;\r",
+							"\r",
+							"pm.test(\"Validate name matches\", function () {\r",
+							"    pm.expect(actualName).to.eql(expectedName);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let name = `${pm.variables.replaceIn('{{$randomLastName}}')} ${pm.variables.replaceIn('{{$randomWord}}')} Solutions`;\r",
+							"pm.environment.set(\"randomName\", name);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "audience",
+						"value": "apim"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItTWwxVjhGckw4Y0xJb3MyZS1rWDBpZVRWalNwYjk5ajBhVjBycjFoNzJ3In0.eyJleHAiOjE3NTAwNDgyOTMsImlhdCI6MTc0OTk2MTg5MywiYXV0aF90aW1lIjoxNzQ5OTYxODkxLCJqdGkiOiJkYmU1ZGQzMS1hZjM1LTRlMjYtODMzZi0yNzBjN2FjNWFlZDgiLCJpc3MiOiJodHRwczovL2RlbW8udmlzaW9ud2F2ZXMuY29tL2F1dGgvcmVhbG1zL25hd2F0IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjliMWJmYWZmLTA5OGItNGVlZS1iODkwLTQyMjhkY2M1YTQxNCIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5hd2F0Iiwic2lkIjoiN2Q1MjM3YzMtNjUwYi00YzJiLWE3ZTktOGVkZTk0NWY4NzE1IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6W10sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkNvbXBhbnkgQWRtaW4iLCJncm91cHMiOlsiZGVmYXVsdC1yb2xlcy1uYXdhdCIsIm9mZmxpbmVfYWNjZXNzIiwiQkkgQW5hbHl0aWNzIiwiQ01QIEFJIHRvb2xraXQiLCJDb21wYW55IGFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iLCJDTVAgY29uZmlndXJhdGlvbiJdLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJjb21wYW55LmFkbWluIiwiZ2l2ZW5fbmFtZSI6IkNvbXBhbnkiLCJmYW1pbHlfbmFtZSI6IkFkbWluIiwiZW1haWwiOiJzdXJhai5kZXZrYXJAdmlzaW9ud2F2ZXMuY29tIn0.XkLyAcSJF4IgfFV0lJnQxiFc7SCPtwbi5P_gr03t_OZHoNu7et_UaeabxNOWp0US6tQiAcR6p6gQCKcuGgceeUs8x8czn2DOC0IIAN_wv6BYGh9aTf5vdCbOsmRju3eLZ2wfUNz6d2mOPaCKe9I7Kj5D427ZS3-UGfSDiTCTjPxOyrgDPoKWitCUnwRV1SF75dalpfXsIC1r9-TZbgmXx_AMCX5POBTLbzeqv4zB0fn3YzsBDDv4Xmp2NpTFaLMmq-H8ch6D7wJY_itBdqUGymeMsy_bNzlf0rM9m9R9_vTDEYYDYYcdECIH6o0_IONUaCSHvE4TY1cwElcEtj7CUQ"
+					},
+					{
+						"key": "client-code",
+						"value": "8892df07-6d62-4ec4-9596-8f48574908ff"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "ngsw-bypass",
+						"value": "bypass-service-worker"
+					},
+					{
+						"key": "origin",
+						"value": "https://demo.visionwaves.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.visionwaves.com/nawat/cmp/cmp-home/home?data=eyJwYWdlTmFtZSI6IkNNUF9CVVNJTkVTU1VOSVRfUEFHRSIsInRpdGxlIjoiT3JnYW5pemF0aW9uIHVuaXRzIn0%3D"
+					},
+					{
+						"key": "requestid",
+						"value": "5469889778178185"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-module",
+						"value": "CMP_APP_NAME"
+					},
+					{
+						"key": "x-submodule",
+						"value": "CMP_AI_STUDIO_AI_FLOW"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"wrapperList\": [\r\n        {\r\n            \"instanceOf\": \"OrganizationUnit\",\r\n            \"relation\": \"Parent\",\r\n            \"sequence\": \"OrganizationUnit-1\",\r\n            \"stringJson\": {\r\n                \"name\": \"{{OUName}}\",\r\n                \"organizationUnitType\": {\r\n                    \"creator\": {\r\n                        \"userid\": 1,\r\n                        \"firstName\": \"System\",\r\n                        \"middleName\": null,\r\n                        \"lastName\": \"User\",\r\n                        \"userName\": \"system.user@enttribe.com\",\r\n                        \"contactNumber\": null,\r\n                        \"email\": null,\r\n                        \"authenticationMethod\": \"Local Authentication\",\r\n                        \"enabled\": true,\r\n                        \"reportingManager\": null,\r\n                        \"customerId\": null,\r\n                        \"deleted\": false,\r\n                        \"organisationRole\": null,\r\n                        \"creationTime\": 1737546964000,\r\n                        \"modificationTime\": 1738772045000,\r\n                        \"creatorName\": null,\r\n                        \"lastModifierName\": null,\r\n                        \"roleName\": null,\r\n                        \"locked\": null\r\n                    },\r\n                    \"createdTime\": 1728892032000,\r\n                    \"lastModifier\": {\r\n                        \"userid\": 1,\r\n                        \"firstName\": \"System\",\r\n                        \"middleName\": null,\r\n                        \"lastName\": \"User\",\r\n                        \"userName\": \"system.user@enttribe.com\",\r\n                        \"contactNumber\": null,\r\n                        \"email\": null,\r\n                        \"authenticationMethod\": \"Local Authentication\",\r\n                        \"enabled\": true,\r\n                        \"reportingManager\": null,\r\n                        \"customerId\": null,\r\n                        \"deleted\": false,\r\n                        \"organisationRole\": null,\r\n                        \"creationTime\": 1737546964000,\r\n                        \"modificationTime\": 1738772045000,\r\n                        \"creatorName\": null,\r\n                        \"lastModifierName\": null,\r\n                        \"roleName\": null,\r\n                        \"locked\": null\r\n                    },\r\n                    \"customerId\": 1,\r\n                    \"modifiedTime\": 1728892032000,\r\n                    \"id\": 4,\r\n                    \"name\": \"Environment\",\r\n                    \"tag\": null,\r\n                    \"tags\": [],\r\n                    \"deleted\": false\r\n                },\r\n                \"parent\": null,\r\n                \"creditLimit\": null,\r\n                \"tag\": null,\r\n                \"description\": null\r\n            },\r\n            \"gridName\": \"\"\r\n        }\r\n    ],\r\n    \"entityRelation\": {\r\n        \"identifier1\": \"CMP_APP_NAME\",\r\n        \"identifier2\": \"OrganizationUnit\",\r\n        \"entityType\": \"OrganizationUnit\",\r\n        \"identifier3\": \"$formvalue.organizationunit.id\"\r\n    },\r\n    \"viewName\": \"cmp_businessunit_form_create\",\r\n    \"viewId\": \"VB-005800\",\r\n    \"applicationName\": \"CMP_APP_NAME\",\r\n    \"history\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.visionwaves.com/apim/fb/3.0/rest/GeneralEntity/saveFormData",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"visionwaves",
+						"com"
+					],
+					"path": [
+						"apim",
+						"fb",
+						"3.0",
+						"rest",
+						"GeneralEntity",
+						"saveFormData"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{NAWATDEMOTOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "NAWATDEMOTOKEN",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "NAWATDEMOTOKEN",
+			"value": ""
+		}
+	]
+}

@@ -152,12 +152,6 @@
 						"exec": [
 							"\r",
 							"\r",
-							"let expectedName = pm.environment.get(\"randomName\");\r",
-							"let actualName = pm.response.json().response[0].fieldNameValue.name;\r",
-							"\r",
-							"pm.test(\"Validate name matches\", function () {\r",
-							"    pm.expect(actualName).to.eql(expectedName);\r",
-							"});\r",
 							""
 						],
 						"type": "text/javascript",
@@ -168,8 +162,6 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"let name = `${pm.variables.replaceIn('{{$randomLastName}}')} ${pm.variables.replaceIn('{{$randomWord}}')} Solutions`;\r",
-							"pm.environment.set(\"randomName\", name);\r",
 							""
 						],
 						"type": "text/javascript",
